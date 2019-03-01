@@ -13,6 +13,8 @@
 		5952180B1F61E84E001A94A2 /* Socket.h in Headers */ = {isa = PBXBuildFile; fileRef = 595218091F61E84E001A94A2 /* Socket.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7EDC73E42229620500FE5738 /* SocketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC721761D4BCA9400F5FD19 /* SocketTests.swift */; };
 		7EDC73E52229620500FE5738 /* VerifyLinuxTestCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8540B01E9FC14E00E41C1D /* VerifyLinuxTestCount.swift */; };
+		7EDC73F12229645900FE5738 /* SocketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC721761D4BCA9400F5FD19 /* SocketTests.swift */; };
+		7EDC73F22229645900FE5738 /* VerifyLinuxTestCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8540B01E9FC14E00E41C1D /* VerifyLinuxTestCount.swift */; };
 		8C51FD591E7C8C8A00C2FDA6 /* BlueSocket.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 8C51FD581E7C8C8A00C2FDA6 /* BlueSocket.podspec */; };
 		8C5FEE911FC319F7002F4CAA /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595217FF1F61E34E001A94A2 /* Socket.swift */; };
 		8C5FEE921FC319F7002F4CAA /* SocketProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595218001F61E34E001A94A2 /* SocketProtocols.swift */; };
@@ -35,6 +37,13 @@
 			remoteGlobalIDString = 8C0F4BF51C4E84CC008B2B0A;
 			remoteInfo = BlueSocket;
 		};
+		7EDC73EF2229645900FE5738 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C0F4BED1C4E84CC008B2B0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C0F4BF51C4E84CC008B2B0A;
+			remoteInfo = BlueSocket;
+		};
 		8CA9B1691C98A00400E607FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8C0F4BED1C4E84CC008B2B0A /* Project object */;
@@ -51,6 +60,7 @@
 		595218091F61E84E001A94A2 /* Socket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Socket.h; path = Socket/Socket.h; sourceTree = "<group>"; };
 		5952180C1F61E8A2001A94A2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Socket/Info.plist; sourceTree = "<group>"; };
 		7EDC73EB2229620500FE5738 /* SocketTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SocketTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EDC73F82229645900FE5738 /* SocketTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SocketTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C0F4BF61C4E84CC008B2B0A /* Socket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Socket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C0F4C081C4E866E008B2B0A /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		8C46DCEA21834123003FAD91 /* libSocket.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libSocket.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +78,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		7EDC73E62229620500FE5738 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EDC73F32229645900FE5738 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -128,6 +145,7 @@
 				8CA9B1631C98A00400E607FB /* SocketTests.xctest */,
 				8C5FEE9B1FC319F7002F4CAA /* Socket.framework */,
 				7EDC73EB2229620500FE5738 /* SocketTests-iOS.xctest */,
+				7EDC73F82229645900FE5738 /* SocketTests-tvOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -225,6 +243,24 @@
 			name = "SocketTests-iOS";
 			productName = BlueSocketTests;
 			productReference = 7EDC73EB2229620500FE5738 /* SocketTests-iOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7EDC73ED2229645900FE5738 /* SocketTests-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EDC73F52229645900FE5738 /* Build configuration list for PBXNativeTarget "SocketTests-tvOS" */;
+			buildPhases = (
+				7EDC73F02229645900FE5738 /* Sources */,
+				7EDC73F32229645900FE5738 /* Frameworks */,
+				7EDC73F42229645900FE5738 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7EDC73EE2229645900FE5738 /* PBXTargetDependency */,
+			);
+			name = "SocketTests-tvOS";
+			productName = BlueSocketTests;
+			productReference = 7EDC73F82229645900FE5738 /* SocketTests-tvOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		8C0F4BF51C4E84CC008B2B0A /* Socket */ = {
@@ -343,12 +379,20 @@
 				8C5FEE8F1FC319F7002F4CAA /* Socket-tvOS */,
 				8CA9B1621C98A00400E607FB /* SocketTests */,
 				7EDC73E02229620500FE5738 /* SocketTests-iOS */,
+				7EDC73ED2229645900FE5738 /* SocketTests-tvOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7EDC73E72229620500FE5738 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EDC73F42229645900FE5738 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -394,6 +438,15 @@
 			files = (
 				7EDC73E42229620500FE5738 /* SocketTests.swift in Sources */,
 				7EDC73E52229620500FE5738 /* VerifyLinuxTestCount.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EDC73F02229645900FE5738 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EDC73F12229645900FE5738 /* SocketTests.swift in Sources */,
+				7EDC73F22229645900FE5738 /* VerifyLinuxTestCount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +497,11 @@
 			target = 8C0F4BF51C4E84CC008B2B0A /* Socket */;
 			targetProxy = 7EDC73E22229620500FE5738 /* PBXContainerItemProxy */;
 		};
+		7EDC73EE2229645900FE5738 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C0F4BF51C4E84CC008B2B0A /* Socket */;
+			targetProxy = 7EDC73EF2229645900FE5738 /* PBXContainerItemProxy */;
+		};
 		8CA9B16A1C98A00400E607FB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8C0F4BF51C4E84CC008B2B0A /* Socket */;
@@ -476,6 +534,35 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.oss.SocketTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		7EDC73F62229645900FE5738 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/SocketTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.oss.SocketTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		7EDC73F72229645900FE5738 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/SocketTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.oss.SocketTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 			};
@@ -774,6 +861,15 @@
 			buildConfigurations = (
 				7EDC73E92229620500FE5738 /* Debug */,
 				7EDC73EA2229620500FE5738 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EDC73F52229645900FE5738 /* Build configuration list for PBXNativeTarget "SocketTests-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EDC73F62229645900FE5738 /* Debug */,
+				7EDC73F72229645900FE5738 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

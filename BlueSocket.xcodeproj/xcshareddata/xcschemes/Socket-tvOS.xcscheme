@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7EDC73ED2229645900FE5738"
+               BuildableName = "SocketTests-tvOS.xctest"
+               BlueprintName = "SocketTests-tvOS"
+               ReferencedContainer = "container:BlueSocket.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "8C5FEE8F1FC319F7002F4CAA"
+            BuildableName = "Socket.framework"
+            BlueprintName = "Socket-tvOS"
+            ReferencedContainer = "container:BlueSocket.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
